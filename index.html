@@ -56,7 +56,7 @@
         <div class="back">
           <div class="container hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button one">Заказать услугу</button>
+            <button type="button" class="button one"  data-modal-open>Заказать услугу</button>
           </div>
         </div>
       </section>
@@ -125,17 +125,28 @@
           <h2 class="wwd-title">Чем мы занимаемся</h2>
           <ul class="wwd-list">
             <li class="wwd-item">
+              <div class="wwd-card">
+                <div class="wwd-meta">
+                ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</div>
               <img src="./img/img1.jpg" alt="программирование" width="370" />
+            </div>
             </li>
             <li class="wwd-item">
-              <img
-                src="./img/img2.jpg"
-                alt="разработка мобильных приложений"
-                width="370"
-              />
+                <div class="wwd-card">
+                  <div class="wwd-meta">
+                  МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</div>
+                <img
+                  src="./img/img2.jpg"
+                  alt="разработка мобильных приложений"
+                  width="370"
+                />
+               </div>
             </li>
             <li class="wwd-item">
+              <div class="wwd-card">
+              <div class="wwd-meta">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</div>
               <img src="./img/img3.jpg" alt="графический дизайн" width="370" />
+            </div>
             </li>
           </ul>
         </div>
@@ -414,16 +425,21 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div>  
       </div>
     </footer>
 
     <!-- modal window -->
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="button-close">icon</button>
+        <button class="button-close" data-modal-close>
+          <svg class="modal-close-icon" width="18" height="18">
+            <use href="/img/icon.svg#close">
+          </svg></button>
+        
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
