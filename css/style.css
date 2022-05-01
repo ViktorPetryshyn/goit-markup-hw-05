@@ -490,3 +490,25 @@ address {
 .join .link-icon:focus {
   background: var(--accented-text-color);
 }
+/* modal window */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.2);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 581px;
+  min-width: 528px;
+  padding: 17px;
+  background-color: #fff;
+}
+.button-close {
+}
